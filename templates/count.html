@@ -1,0 +1,11 @@
+<h1>统计结果:总字数为{{ wordcount }}</h1>
+<a href="..">回到主页</a>
+<h2>您输入的文本是：</h2>
+{{ text }}
+<br>
+<br>
+<h2>文字出现频率</h2>
+{% for word,count in sort %}
+{{ word }} : {{count }}
+<br>
+{% endfor %}
